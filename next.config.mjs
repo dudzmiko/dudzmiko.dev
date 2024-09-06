@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/dudzmiko.dev",
-    output: "export",
+    output: 'export',
     reactStrictMode: true,
-}
-
-export default nextConfig
+  }
+  
+  export default nextConfig
