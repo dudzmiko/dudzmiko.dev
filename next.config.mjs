@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: '/dudzmiko.dev',
-    output: 'export',
-    reactStrictMode: true,
+    output: "export",
     images: {
-      unoptimized: true, // Aby uniknąć problemów z optymalizacją obrazów
+      loader: "akamai",
+      path: "",
     },
-  }
+    assetPrefix: "./",
+  };
   
-  export default nextConfig
-  
+  export default nextConfig;
