@@ -27,12 +27,12 @@ jobs:
         uses: ./.github/workflows/setup-node
 
       - name: Build with Next.js 🏗️
-        run: npx next build && npx next export
+        run: npx next build
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
-          path: out  # 'out' to katalog wyjściowy dla `next export`
+          path: .next
 
   deploy:
     environment:
