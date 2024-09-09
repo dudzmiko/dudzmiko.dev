@@ -55,6 +55,11 @@ export const CONFIG: Config = {
             icon: 'instagram',
         },
         {
+            name: 'Printables',
+            url: 'https://www.printables.com/pl/@dudzmiko_2253400',
+            icon: 'printables',
+        },
+        {
             name: 'dudzmiko@gmail.com',
             url: 'mailto:dudzmiko@gmail.com',
             icon: 'email',
