@@ -1,5 +1,12 @@
 {
-    "HomePage": {
-      "title": "Hello world!"
-    }
+  "page": {
+      "aboutMe": "About me",
+      "featuredProjects": "Featured projects",
+      "allProjects": "All projects",
+      "description": "I am passionate about programming and electronics 💡<br/><br/>Currently, I am working on the development of artificial intelligence and OCR models. I am also a full stack developer with experience in Django and Vue 🐍 <br/><br/>Outside of work, I repair electronics and create microcontroller-based devices ⚡"
+  },
+  "contact": {
+      "title": "Get in touch",
+      "description": "Feel free to reach out if you want to collaborate on a project, have a question, or just want to connect."
   }
+}

@@ -1,0 +1,13 @@
+{
+  "page": {
+      "aboutMe": "O mnie",
+      "featuredProjects": "Wyróżnione projekty",
+      "allProjects": "Wszystkie projekty",
+      "description": "Pasjonuję się programowaniem i elektroniką 💡<br/><br/>Obecnie pracuję nad rozwojem modeli sztucznej inteligencji i OCR. Jestem również deweloperem full stack z doświadczeniem w Django i Vue 🐍 <br/><br/>Po pracy naprawiam elektronikę i tworzę urządzenia oparte na mikrokontrolerach ⚡"
+
+  },
+  "contact": {
+      "title": "Skontaktuj się",
+      "description": "Śmiało skontaktuj się, jeśli chcesz współpracować przy projekcie, masz pytanie lub po prostu chcesz nawiązać kontakt."
+  }
+}

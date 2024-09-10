@@ -10,13 +10,15 @@ import {
     TooltipTrigger,
 } from './ui/tooltip'
 
+import {useTranslations} from 'next-intl';
+
 const Contact = () => {
+    const t = useTranslations('contact');
     return (
         <footer className='mt-12 px-4 pb-20'>
-            <h2 className='font-semibold'>Get in touch</h2>
+            <h2 className='font-semibold'>{t('title')}</h2>
             <p className='leading-6 text-muted-foreground'>
-                Feel free to reach out if you want to collaborate on a project,
-                have a question, or just want to connect.
+                {t('description')}
             </p>
             <div className='mt-6 flex flex-col items-center justify-center gap-6'>
                 <TooltipProvider delayDuration={70}>
