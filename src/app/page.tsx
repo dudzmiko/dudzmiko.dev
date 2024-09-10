@@ -5,9 +5,13 @@ import { Button } from '@/components/ui/button'
 import { CONFIG } from '@/config'
 import Link from 'next/link'
 
+import {useTranslations} from 'next-intl';
+
 export default function Home() {
+    const t = useTranslations('HomePage');
     return (
         <div className='flex flex-col gap-12'>
+            <h1>{t('title')}</h1>
             <Header />
             <div className='animate-slide-from-down-and-fade-2 space-y-2 px-4'>
                 <h2 className='font-semibold'>About me</h2>
