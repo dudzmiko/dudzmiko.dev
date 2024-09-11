@@ -35,7 +35,9 @@ const Projects = () => {
                         </BreadcrumbItem>
                     </BreadcrumbList>
                 </Breadcrumb>
-                <ModeToggle />
+                <div className='px-4'>
+                    <ModeToggle />
+                </div>
             </div>
             <h1 className='animate-slide-from-down-and-fade-2 scroll-m-20 px-4 text-4xl font-bold tracking-tight'>
                 {t('projects.title')}
