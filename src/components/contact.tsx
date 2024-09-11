@@ -13,12 +13,12 @@ import {
 import {useTranslations} from 'next-intl';
 
 const Contact = () => {
-    const t = useTranslations('contact');
+    const t = useTranslations('common');
     return (
         <footer className='mt-12 px-4 pb-20'>
-            <h2 className='font-semibold'>{t('title')}</h2>
+            <h2 className='font-semibold'>{t('contact.title')}</h2>
             <p className='leading-6 text-muted-foreground'>
-                {t('description')}
+                {t('contact.description')}
             </p>
             <div className='mt-6 flex flex-col items-center justify-center gap-6'>
                 <TooltipProvider delayDuration={70}>

@@ -1,13 +1,25 @@
 {
-  "page": {
-      "aboutMe": "O mnie",
-      "featuredProjects": "Wyróżnione projekty",
-      "allProjects": "Wszystkie projekty",
-      "description": "Pasjonuję się programowaniem i elektroniką 💡<br/><br/>Obecnie pracuję nad rozwojem modeli sztucznej inteligencji i OCR. Jestem również deweloperem full stack z doświadczeniem w Django i Vue 🐍 <br/><br/>Po pracy naprawiam elektronikę i tworzę urządzenia oparte na mikrokontrolerach ⚡"
+  "common": {
+    "navbar": {
+      "home": "Home",
+      "projects": "Projects"
+    },
 
-  },
-  "contact": {
-      "title": "Skontaktuj się",
-      "description": "Śmiało skontaktuj się, jeśli chcesz współpracować przy projekcie, masz pytanie lub po prostu chcesz nawiązać kontakt."
+    "aboutMe": {
+      "title": "About me",
+      "description": "I am passionate about programming and electronics 💡 <br/><br/>Currently, I work as a Full Stack Developer, specializing in Django and Vue 🐍 <br/><br/>Outside of work, I repair electronics and design simple electronic circuits ⚡ <br/>I also design 3D models, print them, and use them in my workshop 🛠️"
+    },
+    "featuredProjects": {
+      "title": "Featured projects",
+      "allProjects": "All projects"
+    },
+    "contact": {
+      "title": "Get in touch",
+      "description": "Feel free to reach out if you want to collaborate on a project, have a question, or just want to connect 🤝"
+    },
+
+    "projects": {
+      "title": "All projects"
+    }
   }
 }
