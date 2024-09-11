@@ -10,7 +10,6 @@ type Config = {
         url: string
         icon: keyof typeof Icons
     }[]
-    description: string | JSX.Element
     descriptionRaw: string
     projects: {
         name: string
@@ -65,15 +64,6 @@ export const CONFIG: Config = {
             icon: 'email',
         },
     ],
-    description: (
-        <>
-            I am passionate about programming and electronics 💡<br />
-            <br />
-            Currently, I am working on the development of artificial intelligence and OCR models. I am also a full stack developer with experience in Django and Vue 🐍<br />
-            <br />
-            Outside of work, I repair electronics and create microcontroller-based devices ⚡
-        </>
-    ),
     descriptionRaw: `I am passionate about programming and electronics. Currently I am working on the development of artificial intelligence and OCR models. Also I am a full stack developer with Django and Vue. Outside of work, I repair electronics and create microcontroller-based devices.`,
     projects: [
         {

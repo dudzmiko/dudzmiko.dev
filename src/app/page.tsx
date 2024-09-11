@@ -5,18 +5,21 @@ import { Button } from '@/components/ui/button'
 import { CONFIG } from '@/config'
 import Link from 'next/link'
 
+import {useTranslations} from 'next-intl';
+
 export default function Home() {
+    const t = useTranslations('common');
+    const description = t('aboutMe.description');
+
     return (
         <div className='flex flex-col gap-12'>
             <Header />
             <div className='animate-slide-from-down-and-fade-2 space-y-2 px-4'>
-                <h2 className='font-semibold'>About me</h2>
-                <p className='leading-6 text-muted-foreground'>
-                    {CONFIG.description}
-                </p>
+                <h2 className='font-semibold'>{t('aboutMe.title')}</h2>
+                <p className='leading-6 text-muted-foreground' dangerouslySetInnerHTML={{ __html: description }} />
             </div>
             <div className='flex animate-slide-from-down-and-fade-3 flex-col gap-3'>
-                <h2 className='px-4 font-semibold'>Featured Projects</h2>
+                <h2 className='px-4 font-semibold'>{t('featuredProjects.title')}</h2>
                 {CONFIG.projects
                     .filter((project) => project.featured)
                     .map((project, idx) => (
@@ -38,7 +41,7 @@ export default function Home() {
                     variant={'link'}
                 >
                     <Link href='/projects'>
-                        All projects
+                        {t('featuredProjects.allProjects')}
                         <Icons.arrowUpRight className='inline-block size-4' />
                     </Link>
                 </Button>

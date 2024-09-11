@@ -11,11 +11,14 @@ import {
 import { CONFIG } from '@/config'
 import Link from 'next/link'
 
+import {useTranslations} from 'next-intl';
+
 export const metadata = {
     title: 'Projects',
 }
 
 const Projects = () => {
+    const t = useTranslations('common');
     return (
         <div>
             <div className='flex animate-slide-from-down-and-fade-1 items-start justify-between'>
@@ -23,19 +26,21 @@ const Projects = () => {
                     <BreadcrumbList>
                         <BreadcrumbItem>
                             <BreadcrumbLink asChild>
-                                <Link href='/'>Home</Link>
+                                <Link href='/'>{t('navbar.home')}</Link>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbSeparator />
                         <BreadcrumbItem>
-                            <BreadcrumbPage>Projects</BreadcrumbPage>
+                            <BreadcrumbPage>{t('navbar.projects')}</BreadcrumbPage>
                         </BreadcrumbItem>
                     </BreadcrumbList>
                 </Breadcrumb>
-                <ModeToggle />
+                <div className='px-4'>
+                    <ModeToggle />
+                </div>
             </div>
             <h1 className='animate-slide-from-down-and-fade-2 scroll-m-20 px-4 text-4xl font-bold tracking-tight'>
-                All Projects
+                {t('projects.title')}
             </h1>
             <div className='animate-slide-from-down-and-fade-3 space-y-3 pt-12'>
                 {CONFIG.projects.map((project, idx) => (

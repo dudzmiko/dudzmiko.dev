@@ -1,5 +1,6 @@
 import { Icons } from '@/components/icons'
 import { ModeToggle } from '@/components/mode-toggle'
+import { LanguageToggle } from '@/components/language-toggle'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { buttonVariants } from '@/components/ui/button'
 import {
@@ -39,7 +40,10 @@ const Header = () => {
                         </p>
                     </div>
                 </div>
-                <ModeToggle />
+                <div className='flex items-center gap-2'>
+                    {/* <LanguageToggle /> */}
+                    <ModeToggle />
+                </div>
             </div>
             <div className='flex items-center gap-2'>
                 <TooltipProvider delayDuration={70}>
